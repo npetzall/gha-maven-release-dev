@@ -3,7 +3,7 @@
 
   <groupId>com.npetzall.github.gha</groupId>
   <artifactId>maven-release-dev</artifactId>
-  <version>1.0.1-SNAPSHOT</version>
+  <version>1.0.1</version>
 
   <properties>
     <maven.compiler.source>16</maven.compiler.source>
@@ -17,7 +17,7 @@
     <url>https://github.com/npetzall/gha-maven-release-dev</url>
     <connection>scm:git:https://github.com/npetzall/gha-maven-release-dev.git</connection>
     <developerConnection>scm:git:https://github.com/npetzall/gha-maven-release-dev.git</developerConnection>
-    <tag>HEAD</tag>
+    <tag>v1.0.1</tag>
   </scm>
 
   <dependencyManagement>
