@@ -47,10 +47,6 @@ jobs:
         with:
           draft-tag: "v${{ github.event.inputs.release_version }}"
           template: "./.github/release-ready/release_note.dot"
-      - name: Setup git name & email
-        run: |
-          git config user.name "Github Action"
-          git config user.email "action@github.com"
       - name: Maven release
         if: success()
         run: >
