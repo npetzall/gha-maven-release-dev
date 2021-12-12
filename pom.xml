@@ -16,8 +16,8 @@
 
   <scm>
     <url>https://github.com/npetzall/gha-maven-release-dev</url>
-    <connection>scm:git:git@github.com:npetzall/gha-maven-release-dev.git</connection>
-    <developerConnection>scm:git:git@github.com:npetzall/gha-maven-release-dev.git</developerConnection>
+    <connection>scm:git:https://github.com/npetzall/gha-maven-release-dev.git</connection>
+    <developerConnection>scm:git:https://github.com/npetzall/gha-maven-release-dev.git</developerConnection>
     <tag>HEAD</tag>
   </scm>
 
@@ -97,6 +97,11 @@
             <usePhrasedTestCaseMethodName>true</usePhrasedTestCaseMethodName>
           </statelessTestsetReporter>
         </configuration>
+      </plugin>
+      <plugin>
+        <groupId>org.apache.maven.plugins</groupId>
+        <artifactId>maven-release-plugin</artifactId>
+        <version>3.0.0-M4</version>
       </plugin>
     </plugins>
   </build>
