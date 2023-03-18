@@ -1,0 +1,12 @@
+name: test workfloww
+on:
+  workflow_dispatch
+  
+jobs:
+  release:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Run in shell
+        run: |
+          APP_VERSION=$(./mvnw help:evaluate -Dexpression=project.version -q -DforceStdout)
+          echo "app-${APP_VERSION}.jar"
